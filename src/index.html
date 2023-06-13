@@ -11,14 +11,16 @@
 <body>
     <section id="bienvenida" class="bienvenida">
         <div>
-            <h1>Bienvenid@s a la trivia de Colombia</h1>
+            <h1>Trivia de Colombia</h1>
         </div>
 
         <!--Nombre del jugador-->
-        <label id="nombre"> Nombre del jugador</label>
-        <input type="text" id="jugador"></input>
+        <label class="nombre-jugador" id="nombre" for="jugador">Nombre del jugador</label><br>
+        <!-- Añadir el atributo "for" -->
+        <input type="text" id="jugador"><br>
         <button id="botonEnviar">Enviar</button>
     </section>
+
 
     <!--Opciones de botones de selección-->
     <section id="categorias" class="categorias">
@@ -73,6 +75,7 @@
 
         <!--Botón de enviar respuestas geografía-->
         <button id="boton-enviar-geografia" onclick="enviarGeografia()"> Responder y ver resultado</button><br><br>
+        <button id="regresargeografia"> Regresar a las categorías</button><br><br>
     </section>
 
     <!--Contenedor cultura general>
@@ -115,12 +118,11 @@
 
         <!--Botón de enviar respuestas cultura general-->
         <button id="myBtn" onclick="enviarCultura()"> Responder y ver resultado</button><br><br>
+        <!--Botón de regresar-->
+        <button id="regresarcultura"> Regresar a las categorías</button><br><br>
     </section>
 
-    <!--Botón de regresar-->
-    <section id="botonRegresar" class="botonRegresar">
-        <button id="regresar"> Regresar a las categorías</button><br><br>
-    </section>
+
 
     <script src="main.js"></script>
 </body>
