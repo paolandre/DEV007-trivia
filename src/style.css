@@ -1,3 +1,129 @@
-/*
-  Aquí van los estilos
-*/
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+* { 
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1;
+  }
+  
+  button {
+  color: #fff;
+  background-color: #0091ff; /* codigo hexadecimal*/
+  border-radius: 10px; 
+  padding: 5px;
+  cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8e3e65;
+  }
+  
+  .bienvenida {
+    color: #021e24;
+    background-image: url("imagen.png");
+    align-content: center;
+    background-size: cover;
+    padding: 300px 80px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+  }
+  
+  .categorias {
+    color: #021e24;
+    background-image: url("imagen.png");
+    align-content: center;
+    background-size: cover;
+    padding: 300px 80px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  p {
+   font-size: 20px; 
+  }
+  
+  .contenedorGeografia {
+    color: #021e24;
+    background-image: url("imagen.png");
+    align-content: center;
+    background-size: cover;
+    padding: 80px 80px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .contenedorCultura {
+    color: #021e24;
+    background-image: url("imagen.png");
+    align-content: center;
+    background-size: cover;
+    padding: 80px 80px;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
+  
+  .botonRegresar {
+    padding: 1px 1px
+  }
+
+  /* Estilos para el fondo oscuro */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  /* Estilos para la ventana modal */
+  .modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    z-index: 999;
+  }
+  
+  /* Estilos para el contenido de la ventana modal */
+  .modal-content {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+
+
+
