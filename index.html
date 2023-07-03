@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia de laboratoria</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section id="bienvenida" class="bienvenida">
+        <img class="imagen-colombia" src="titulo-colombia.png" alt="Imagen de Colombia" width="400px" height="150px">
+
+        <!--Nombre del jugador-->
+        <div>
+            <p class="nombre-jugador" id="nombre" for="jugador">¿Quieres probar qué tanto sabes de Colombia?</p><br>
+            <input placeholder="Escribe tu nombre" type="text" id="jugador"><br>
+            <button class="bienvenida-boton" id="botonEnviar">Enviar</button>
+        </div>
+    </section>
+
+
+    <!--Opciones de botones de selección-->
+    <section id="categorias" class="categorias">
+        <img src="Colombia.png" alt="Imagen de Colombia" width="250px" height="250px">
+        <h1 id="saludo"></h1>
+        <p>Selecciona la categoría en la que quieres jugar</p>
+        <button id="geografia"> Geografía </button>
+        <button id="culturaGeneral"> Cultura general</button> <br>
+    </section>
+
+    <!--Contenedor geografía-->
+    <section id="contenedorGeografia" class="contenedorGeografia">
+        <!--Pregunta 1 geografía-->
+        <div>
+            <p id="pregunta">
+                ¿Cuál es la capital de Colombia?
+            </p>
+            <input type="radio" name="capital" value="bogota" id="bogota">Bogotá</input><br>
+            <input type="radio" name="capital" value="lima" id="lima">Lima</input><br>
+            <input type="radio" name="capital" value="cali" id="cali">Cali</input><br>
+            <input type="radio" name="capital" value="medellin" id="medellin">Medellín</input><br>
+            <p id="respuesta1"></p>
+        </div>
+
+        <!--Pregunta 2 geografía-->
+        <div>
+            <p id="pregunta">
+                ¿Cuáles países limitan con Colombia?
+            </p>
+            <input type="radio" name="paiseslimite" value="Bolivia, Paraguay y Venezuela"
+                id="Bolivia, Paraguay y Venezuela">Bolivia, Paraguay y Venezuela</input><br>
+            <input type="radio" name="paiseslimite" value="Ecuador, Perú, Brasil, Venezuela y Panamá"
+                id="Ecuador, Perú, Brasil, Venezuela y Panamá">Ecuador, Perú, Brasil, Venezuela y Panamá</input><br>
+            <input type="radio" name="paiseslimite" value="México, Perú, Ecuador y Brasil"
+                id="México, Perú, Ecuador y Brasil">México, Perú, Ecuador y Brasil</input><br>
+            <input type="radio" name="paiseslimite" value="Chile, Argentina, Costa Rica, Perú y El Salvador"
+                id="Chile, Argentina, Costa Rica, Perú y El Salvador">Chile, Argentina, Costa Rica, Perú y El
+            Salvador</input><br>
+            <p id="respuesta2"> </p>
+        </div>
+
+        <!--Pregunta 3 geografía-->
+        <div>
+            <p id="pregunta">
+                ¿En qué hemisferio está ubicado Colombia con respecto a Sur América?
+            </p>
+            <input type="radio" name="hemisferio" value="norte" id="norte">Norte</input><br>
+            <input type="radio" name="hemisferio" value="Sur" id="Sur">Sur</input><br>
+            <input type="radio" name="hemisferio" value="oriente" id="oriente">Oriente</input><br>
+            <input type="radio" name="hemisferio" value="occidente" id="occidente">Occidente</input><br>
+            <p id="respuesta3"></p>
+        </div><br>
+
+        <!--Botón de enviar respuestas geografía-->
+        <button id="boton-enviar-geografia" onclick="enviarGeografia()"> Responder y ver resultado</button><br><br>
+        <button id="regresargeografia"> Regresar a las categorías</button><br><br>
+    </section>
+
+    <!--Contenedor cultura general>
+    Pregunta 1 cultura general-->
+    <section id="contenedorCultura" class="contenedorCultura">
+        <div>
+            <p id="pregunta">
+                ¿Quién escribió 100 años de soledad?
+            </p>
+            <input type="radio" name="soledad" value="gabriela" id="gabriela"> Gabriela Mistral</input><br>
+            <input type="radio" name="soledad" value="mario" id="mario">Mario Benedetti</input><br>
+            <input type="radio" name="soledad" value="gabriel" id="gabriel">Gabriel García Márquez</input><br>
+            <input type="radio" name="soledad" value="jorge">Jorge Luis Borges</input><br>
+            <p id="respuesta1cultura"></p>
+        </div>
+
+        <!--Pregunta 2 cultura general>-->
+        <div>
+            <p id="pregunta">
+                ¿Cuál es la artista musical más famosa de Colombia?
+            </p>
+            <input type="radio" name="artista" value="shakira" id="shakira">Shakira</input><br>
+            <input type="radio" name="artista" value="jennifer" id="jennifer">Jennifer López</input><br>
+            <input type="radio" name="artista" value="camila">Camila Cabello</input><br>
+            <input type="radio" name="artista" value="artista" id="anitta">Anitta</input><br>
+            <p id="respuesta2cultura"> </p>
+        </div>
+
+        <!--Pregunta 3 cultura general-->
+        <div>
+            <p id="pregunta">
+                ¿Qué fruta exótica se cultiva en Colombia?
+            </p>
+            <input type="radio" name="fruta" value="kiwi" id="kiwi">Kiwi</input><br>
+            <input type="radio" name="fruta" value="lulo" id="lulo">Lulo</input><br>
+            <input type="radio" name="fruta" value="mango" id="mango">Mango</input><br>
+            <input type="radio" name="fruta" value="papaya" id="papaya">Papaya</input><br>
+            <p id="respuesta3cultura"></p>
+        </div><br>
+
+        <!--Botón de enviar respuestas cultura general-->
+        <button id="myBtn" onclick="enviarCultura()"> Responder y ver resultado</button><br><br>
+        <!--Botón de regresar-->
+        <button id="regresarcultura"> Regresar a las categorías</button><br><br>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
